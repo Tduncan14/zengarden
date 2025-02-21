@@ -68,6 +68,25 @@ header h2 {
 }
 
 
+.intro {
+    position: relative;
+}
+
+.intro::before {
+    content: var(--pseudo-content, "");
+    position: absolute;
+    top: -40px;
+    color: red;
+    /* Position above Zen Garden */
+    left: 0;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 2em;
+    white-space: nowrap;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+
 
 /* summmary in the intro */
 
