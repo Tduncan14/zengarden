@@ -1,0 +1,190 @@
+/* A soft reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* 
+    font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'IM Fell English', serif;
+    width: 100%;
+    min-height: 100%;
+    font-size: 1rem;
+    color: red;
+    overflow-x: hidden;
+    position: relative;
+    background: url('https://plus.unsplash.com/premium_photo-1669061097456-a7d45a726580?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
+    background-size: cover;
+
+}
+
+
+
+/* parent. */
+
+.page-wrapper {
+    padding: 4rem;
+    position: relative;
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "main main aside";
+
+}
+
+/* intro headerarea */
+
+
+.intro header {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+header h1 {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+
+header h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.intro {
+    margin-bottom: 2rem;
+    grid-area: header;
+    /* padding: 4rem; */
+
+}
+
+
+
+/* summmary in the intro */
+
+
+
+.summary {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 900;
+}
+
+.summary p:nth-of-type(2) {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.summary a {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ending header*/
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* main content */
+
+.main {
+    grid-area: main;
+    margin-bottom: 6rem;
+}
+
+.main h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* end main content */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* aside Content */
+
+.sidebar {
+    grid-area: aside;
+    padding: 1rem;
+}
+
+
+.sidebar li {
+    list-style-type: none;
+}
+
+
+
+footer {
+    margin-top: 4rem;
+    position: absolute;
+    display: flex;
+    justify-content: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 4rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 700;
+
+
+}
+
+
+
+footer a {}
+
+
+/* end content */
+
+
+
+
+/* special effect */
+
+.ink-drop {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: spread 0.5s ease-out forwards, fadeOut 2s ease-out 0.5s forwards;
+}
+
+@keyframes spread {
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}

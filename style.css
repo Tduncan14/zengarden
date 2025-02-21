@@ -1,0 +1,211 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+
+
+/* A soft reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    color: white;
+    background: #fff url(./chineseculture.jpeg) no-repeat bottom right;
+
+}
+
+
+/* This the page wrapper */
+
+.page-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header header"
+        "content content sidebar"
+        "content content sidebar";
+    grid-template-rows: auto;
+}
+
+
+.intro {
+    background-image: url('https://images.unsplash.com/photo-1647551226093-2f015910d3ba?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    grid-area: header;
+}
+
+
+/* end of page wrapper */
+
+
+
+/* this the cssgarden banner side */
+
+
+header {
+    padding: 5rem;
+}
+
+
+aside {
+    grid-area: sidebar;
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/16/00/04/jamaica-1460207_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* end of the left side */
+
+
+
+/* beginning of the right side */
+
+
+.main.supporting::before {
+    content: "This is content added before the main section.";
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/16/00/04/jamaica-1460207_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -100px;
+    /* Adjust the value as needed */
+    top: 0;
+    /* Aligns the content with the top of the main section */
+    font-size: 20px;
+    color: #333;
+    background-color: #f0f0f0;
+    /* Optional styling */
+    padding: 10px;
+    min-height: 100%;
+    width: 210px;
+
+}
+
+.supporting {
+    position: relative;
+    background-image: url('https://plus.unsplash.com/premium_photo-1674591172391-b3054ccdca25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    grid-area: content;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    /* width: 100%;
+    clear: both;
+    display: block;
+    background-image: url('https://images.unsplash.com/photo-1647551226093-2f015910d3ba?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+}
+
+/* end of footer */
+
+
+
+/* this is support and main content */
+
+
+
+
+
+/* this is the sidebar */
+
+.sidebar {}
+
+p {}
+
+h3 {}
+
+a:link {}
+
+a:visited {}
+
+a:hover,
+a:focus,
+a:active {}
+
+abbr {}
+
+
+/* specific divs */
+
+.intro {}
+
+header h1 {}
+
+header h2 {}
+
+header {}
+
+.summary {}
+
+.summary p {}
+
+.preamble {}
+
+.supporting {}
+
+footer {}
+
+footer a:link,
+footer a:visited {}
+
+.sidebar {}
+
+.sidebar .wrapper {}
+
+.sidebar h3.select {}
+
+.sidebar h3.archives {}
+
+.sidebar h3.resources {}
+
+
+.sidebar ul {}
+
+.sidebar li {}
+
+.sidebar li a:link {}
+
+.sidebar li a:visited {}
+
+
+.extra1 {}
