@@ -20,19 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let i = 0;
 
     // Function to update the content of the ::before pseudo-element
-    function typeText() {
+    function typeTannaya() {
         if (i < text.length) {
             document.querySelector(".intro").style.setProperty(
                 '--pseudo-content',
                 `"${text.substring(0, i + 1)}"`
             );
             i++;
-            setTimeout(typeText, 200); // Adjust speed here
+            setTimeout(typeTannaya, 200); // Adjust speed here
         }
     }
 
     // Start the typing effect
-    typeText();
+    typeTannaya();
 });
 
 // document.addEventListener("DOMContentLoaded", function () {
