@@ -24,6 +24,28 @@ body {
 
 
 
+/* general///////////////////////////////// */
+
+
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+
+a:hover {
+    color: purple;
+    transition: all ease 1s;
+}
+
+
+/* end of general.///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 /* parent. */
 
 .page-wrapper {
@@ -91,6 +113,8 @@ header h2 {
 .preamble h3 {
     margin-bottom: 1rem;
     margin-top: 5rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bolder;
 }
 
 /* summmary in the intro */
@@ -185,6 +209,11 @@ footer {
 
 footer a {}
 
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
 
 /* end content */
 
@@ -214,6 +243,12 @@ footer a {}
 
 
 
+.designer-name {
+    font-family: 'Petit Formal Script', cursive;
+    color: red;
+    font-weight: 700;
+
+}
 
 
 
