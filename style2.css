@@ -94,12 +94,14 @@ header h2 {
     position: relative;
 }
 
+
+/* Position above Zen Garden */
+
 .intro::before {
     content: var(--pseudo-content, "");
     position: absolute;
     top: -40px;
     color: red;
-    /* Position above Zen Garden */
     left: 0;
     font-family: 'Petit Formal Script', cursive;
     font-size: 2em;
@@ -274,4 +276,22 @@ footer a:hover {
     to {
         opacity: 0;
     }
+}
+
+
+
+/* enddddddddddddddddddddddddddd of special  */
+
+
+
+/* media screen */
+
+
+@media only screen and (max-width: 600px) {
+
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
